@@ -1,9 +1,9 @@
 console.log("Задача 5-2");
 
 const User = function (name, age, followers) {
-  this.name = "";
-  this.age = 0;
-  this.followers = 0;
+  this.name = name;
+  this.age = age;
+  this.followers = followers;
 };
 User.prototype.getInfo = function () {
   return `User ${this.name} is ${this.age} years old and has ${this.followers} followers`;
