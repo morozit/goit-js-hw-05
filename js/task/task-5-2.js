@@ -1,13 +1,20 @@
 console.log("Задача 5-2");
 
-const User = function (name, age, followers) {
-  this.name = name;
-  this.age = age;
-  this.followers = followers;
-};
-User.prototype.getInfo = function () {
-  return `User ${this.name} is ${this.age} years old and has ${this.followers} followers`;
-};
+class User {
+  constructor(name, age, followers) {
+    this.name = name;
+    this.age = age;
+    this.followers = followers;
+  }
+  getInfo() {
+    return `User ${this.name} is ${this.age} years old and has ${this.followers} followers`;
+  }
+}
+
+// TODO   |
+// TODO  /|\
+// TODO   |
+// TODO   |
 
 console.log(typeof User);
 // 'function'
