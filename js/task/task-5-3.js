@@ -5,12 +5,20 @@ class Storage {
     this.items = items;
   }
   getItems() {
-    this.items = items;
+    return this.items;
   }
   addItem(item) {
     this.items.push(item);
   }
-  removeItem()
+  removeItem(item) {
+    this.items.splice(items.indexOf(item), items.indexOf(item));
+  }
+  // removeItem(item) {
+  //   let index = this.items.indexOf(item);
+  //   if (index > -1) {
+  //     return this.items.splice(index, 1);
+  //   }
+  // }
 }
 
 // TODO   |
@@ -34,7 +42,7 @@ console.log(storage.getItems());
 ] */
 
 storage.addItem("Дроид");
-console.log(storage.getItems());
+// console.log(storage.getItems());
 /* [
   'Нанитоиды',
   'Пролонгер',
