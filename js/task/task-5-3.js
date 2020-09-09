@@ -1,25 +1,22 @@
 console.log("Задача 5-3");
 
 class Storage {
-  constructor(items) {
+  constructor(items = []) {
     this.items = items;
   }
-
   getItems() {
     return this.items;
   }
-
   addItem(item) {
-    return this.items.push(item);
+    this.items.push(item);
   }
-
-  removeItem(item) {
-    let index = this.items.indexOf(item);
-    if (index > -1) {
-      return this.items.splice(index, 1);
-    }
-  }
+  removeItem()
 }
+
+// TODO   |
+// TODO  /|\
+// TODO   |
+// TODO   |
 
 console.log(typeof Storage);
 // 'function'
