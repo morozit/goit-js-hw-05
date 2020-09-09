@@ -8,6 +8,11 @@ Account.prototype.getInfo = function () {
   return `login : ${this.login}, email: ${this.email}`;
 };
 
+// TODO   |
+// TODO  /|\
+// TODO   |
+// TODO   |
+
 console.log(typeof Account.prototype.getInfo);
 // function
 
