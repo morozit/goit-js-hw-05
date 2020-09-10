@@ -25,10 +25,7 @@ class Storage {
   }
 
   removeItem(item) {
-    let index = this.items.indexOf(item);
-    if (index > -1) {
-      return this.items.splice(index, 1);
-    }
+    this.items = this.items.filter((itemName) => itemName !== item);
   }
 }
 
