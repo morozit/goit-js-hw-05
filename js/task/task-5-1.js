@@ -1,6 +1,6 @@
 // console.log("Задача 5-1");
 
-const Account = function (login, email) {
+const Account = function ({ login, email }) {
   this.login = login;
   this.email = email;
 };
