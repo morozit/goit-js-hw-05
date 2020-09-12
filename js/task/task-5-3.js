@@ -11,14 +11,12 @@ class Storage {
     this.items.push(item);
   }
   removeItem(item) {
-    this.items.splice(items.indexOf(item), items.indexOf(item));
+    if (this.items.includes(item)) {
+      this.items.splice(this.items.indexOf(item), 1);
+    }
   }
-  // removeItem(item) {
-  //   let index = this.items.indexOf(item);
-  //   if (index > -1) {
-  //     return this.items.splice(index, 1);
-  //   }
-  // }
+
+  // this.items = this.items.filter
 }
 
 // TODO   |
